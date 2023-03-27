@@ -1,0 +1,75 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.header {
+  min-height: 100vh;
+  width: 1000;
+  background-color: none;
+  /* background :  url(./public/eduford_img/banner.png) no-repeat scroll left center; */
+  background-image: linear-gradient(
+      rgba(161, 156, 156, 0.7),
+      rgba(99, 99, 99, 0.7)
+  ),url(./eduford_img/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav img {
+  width: 150px;
+}
+.nav-link {
+  text-align: right;
+}
+.nav-link ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-link ul li a {
+  text-decoration: none;
+  font-size: larger;
+  flex-direction: row;
+}
+.text-box {
+  width: 90%;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px 0 45px;
+  font-size: 14px;
+  color: black;
+}
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-link ul li {
+    display: block;
+  }
+  .nav-link {
+    position: absolute;
+    background: #146c94;
+    height: 100vh;
+    width: 200px;
+    top:0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+  }
+}

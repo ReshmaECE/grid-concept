@@ -1,0 +1,31 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  background-color: #bb2baf;
+  padding: 2px;
+}
+.grid-container > div {
+  background-color: rgba(85, 196, 240, 0.8);
+  text-align: center;
+  padding: 40px 0;
+    font-size: 30px;
+}
+.item1 {
+  grid-column: 1 / 5;
+}
+.item2 {
+  grid-row: 2/4;
+}
+.item3 {
+  grid-row: 2/4;
+  grid-column: 2/4;
+}
+.item4 {
+  grid-row: 2/4;
+  grid-column: 4/5;
+}
+.item5 {
+  grid-column: 1/5;
+}

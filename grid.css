@@ -1,0 +1,20 @@
+.grid-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    background-color: blue;
+  padding:70px;
+  grid-template-rows:40px;
+  
+}
+.grid-item{
+    background-color: rgba(236, 188, 188, 0.8);
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    padding: 20px ;
+    font-size: 30x;
+    text-align: center;
+     grid-row: 2  span/ 1 ;
+
+
+  }
+
+    
